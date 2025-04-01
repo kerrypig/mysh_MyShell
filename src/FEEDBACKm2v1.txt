@@ -1,0 +1,86 @@
+14-February-2025 10:37:55---Student: repo_zhukai16
+14-February-2025 10:37:55----Code compiles:PASS
+Launch Suite:
+  14-February-2025 10:37:56----exit causes process to terminate with correct return code:OK
+  14-February-2025 10:37:58----Shell message is displayed, uses exit to test:OK
+Result:PASS
+Unknown Command Message:
+  14-February-2025 10:38:00----Unknown command should display corresponding message:OK
+  14-February-2025 10:38:02----Multiple unknown commands:OK
+Result:PASS
+Long Command Message:
+  14-February-2025 10:38:04----A not-too-long and legal command input is valid:OK
+  14-February-2025 10:38:06----Long command input is invalid:OK
+  14-February-2025 10:38:08----Long command message takes priority:OK
+Result:PASS
+Echo Simple Messages:
+  14-February-2025 10:38:10----Echo of one character displays correctly:OK
+  14-February-2025 10:38:12----Echo of simple message displays correctly:OK
+  14-February-2025 10:38:14----Echo of simple message displays correctly v3:OK
+  14-February-2025 10:38:16----Echo of simple message displays correctly v3:OK
+  14-February-2025 10:38:18----Echo of simple message does not show errors:OK
+Result:PASS
+Echo Special Characters:
+  14-February-2025 10:38:20----Echo of mixed message displays correctly:OK
+  14-February-2025 10:38:22----echo with quotes has no special meaning:OK
+  14-February-2025 10:38:24----echo ignores extra spaces:OK
+Result:PASS
+Multiple Commands:
+  14-February-2025 10:38:26----Two echo commands display correctly:OK
+  14-February-2025 10:38:28----Two echo commands do not show error:OK
+  14-February-2025 10:38:30----Echo commands work while other commands error:OK
+Result:PASS
+Hidden - echo with hidden message and near limits:
+  14-February-2025 10:38:32----echo with a random message displays correctly:OK
+  14-February-2025 10:38:34----Echo command with 126 characters is displayed correctly:OK
+  14-February-2025 10:38:36----Echo command with 129 characters triggers an error message:OK
+Result:PASS
+Hidden - echo does not display an extra space:
+  14-February-2025 10:38:38----Echo command does not print trailing spaces:OK
+  14-February-2025 10:38:40----Echo command does not print leading spaces:OK
+  14-February-2025 10:38:42----Echo command does not print extra spaces in middle:OK
+Result:PASS
+Hidden - valid commands as a prefix:
+  14-February-2025 10:38:44----Invalid command given that includes a valid command as a prefix:OK
+  14-February-2025 10:38:46----Invalid command given that includes a valid command as a prefix:OK
+Result:PASS
+Simple variables accesses:
+  14-February-2025 10:38:48----Declare and access a single variable:OK
+  14-February-2025 10:38:50----Declare and access a single variable:OK
+  14-February-2025 10:38:52----Tests for correct evaluation of variable expansions containing only intitialized variables:NOT OK
+  14-February-2025 10:38:54----Tests for correct evaluation of variable expansions containing variables plus plaintext and uninitialized variables:NOT OK
+Result:FAIL
+Variable integration with other commands:
+  14-February-2025 10:38:56----Declare a single variable:OK
+  14-February-2025 10:38:58----Declare and access two variables:OK
+Result:PASS
+Custom variable accesses:
+  14-February-2025 10:39:00----Access variables in separate lines:OK
+  14-February-2025 10:39:02----Access variables in separate lines v2:OK
+Result:PASS
+Echo without variables displays plain text:
+  14-February-2025 10:39:04----Variables access with $ is bound to name:OK
+  14-February-2025 10:39:06----Non-existing variable displays as an empty string:OK
+Result:PASS
+Variable values can be redefined:
+  14-February-2025 10:39:08----Variable value is redefined appropriately:OK
+  14-February-2025 10:39:10----Variable value is redefined appropriately v2:OK
+Result:PASS
+Variable formatting edge cases:
+  14-February-2025 10:39:12----Variables accesses separate by the first equal:OK
+  14-February-2025 10:39:14----Variable declaration with spaces is not supported:OK
+Result:PASS
+Advanced tests:
+  14-February-2025 10:39:16----Declare and access 100 variables:NOT OK
+Result:FAIL
+Hidden - Variable Definition Error Handling:
+  14-February-2025 10:39:26----Long variable declaration is prohibited:OK
+Result:PASS
+Hidden - Variable Expansion in Assignment:
+  14-February-2025 10:39:28----Test variable expansion during variable assignment:NOT OK
+Result:FAIL
+Hidden - Large Redefine:
+  14-February-2025 10:39:30----Declare, redefine and access 100 variables:NOT OK
+Result:FAIL
+14-February-2025 10:39:50--- Test Suites Passed 16.0/20.0
+14-February-2025 10:39:50 FINISHED

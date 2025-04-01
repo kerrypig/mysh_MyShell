@@ -1,0 +1,155 @@
+08-March-2025 17:56:04---Student: students
+08-March-2025 17:56:04----Code compiles:PASS
+Launch Suite:
+  08-March-2025 17:56:05----exit causes process to terminate with correct return code:OK
+  08-March-2025 17:56:06----Shell message is displayed, uses exit to test:OK
+Result:PASS
+Unknown Command Message:
+  08-March-2025 17:56:07----Unknown command should display corresponding message:OK
+  08-March-2025 17:56:08----Multiple unknown commands:OK
+Result:PASS
+Long Command Message:
+  08-March-2025 17:56:09----A not-too-long and legal command input is valid:OK
+  08-March-2025 17:56:10----Long command input is invalid:OK
+  08-March-2025 17:56:11----Long command message takes priority:OK
+Result:PASS
+Echo Simple Messages:
+  08-March-2025 17:56:12----Echo of one character displays correctly:OK
+  08-March-2025 17:56:13----Echo of simple message displays correctly:OK
+  08-March-2025 17:56:14----Echo of simple message displays correctly v3:OK
+  08-March-2025 17:56:15----Echo of simple message displays correctly v3:OK
+  08-March-2025 17:56:16----Echo of simple message does not show errors:OK
+Result:PASS
+Echo Special Characters:
+  08-March-2025 17:56:17----Echo of mixed message displays correctly:OK
+  08-March-2025 17:56:18----echo with quotes has no special meaning:OK
+  08-March-2025 17:56:19----echo ignores extra spaces:OK
+Result:PASS
+Multiple Commands:
+  08-March-2025 17:56:20----Two echo commands display correctly:OK
+  08-March-2025 17:56:21----Two echo commands do not show error:OK
+  08-March-2025 17:56:22----Echo commands work while other commands error:OK
+Result:PASS
+Hidden - echo with hidden message and near limits:
+  08-March-2025 17:56:23----echo with a random message displays correctly:OK
+  08-March-2025 17:56:24----Echo command with 126 characters is displayed correctly:OK
+  08-March-2025 17:56:25----Echo command with 129 characters triggers an error message:OK
+Result:PASS
+Hidden - echo does not display an extra space:
+  08-March-2025 17:56:26----Echo command does not print trailing spaces:OK
+  08-March-2025 17:56:27----Echo command does not print leading spaces:OK
+  08-March-2025 17:56:28----Echo command does not print extra spaces in middle:OK
+Result:PASS
+Hidden - valid commands as a prefix:
+  08-March-2025 17:56:29----Invalid command given that includes a valid command as a prefix:OK
+  08-March-2025 17:56:30----Invalid command given that includes a valid command as a prefix:OK
+Result:PASS
+Hidden - Variable Definition Error Handling:
+  08-March-2025 17:56:31----Long variable declaration is prohibited:OK
+Result:PASS
+Hidden - Variable Expansion in Assignment:
+  08-March-2025 17:56:31----Test variable expansion during variable assignment:OK
+Result:PASS
+Hidden - Large Redefine:
+  08-March-2025 17:56:32----Declare, redefine and access 100 variables:OK
+Result:PASS
+Simple variables accesses:
+  08-March-2025 17:56:52----Declare and access a single variable:OK
+  08-March-2025 17:56:52----Declare and access a single variable:OK
+  08-March-2025 17:56:53----Tests for correct evaluation of variable expansions containing only intitialized variables:OK
+  08-March-2025 17:56:53----Tests for correct evaluation of variable expansions containing variables plus plaintext and uninitialized variables:OK
+Result:PASS
+Variable integration with other commands:
+  08-March-2025 17:56:54----Declare a single variable:OK
+  08-March-2025 17:56:54----Declare and access two variables:OK
+Result:PASS
+Custom variable accesses:
+  08-March-2025 17:56:55----Access variables in separate lines:OK
+  08-March-2025 17:56:55----Access variables in separate lines v2:OK
+Result:PASS
+Echo without variables displays plain text:
+  08-March-2025 17:56:56----Variables access with $ is bound to name:OK
+  08-March-2025 17:56:56----Non-existing variable displays as an empty string:OK
+Result:PASS
+Variable values can be redefined:
+  08-March-2025 17:56:57----Variable value is redefined appropriately:OK
+  08-March-2025 17:56:57----Variable value is redefined appropriately v2:OK
+Result:PASS
+Variable formatting edge cases:
+  08-March-2025 17:56:58----Variables accesses separate by the first equal:OK
+  08-March-2025 17:56:58----Variable declaration with spaces is not supported:OK
+Result:PASS
+Advanced tests:
+  08-March-2025 17:56:59----Declare and access 100 variables:OK
+Result:PASS
+correct cat argument setup:
+  08-March-2025 17:57:09----Cat on a file that contains one word:OK
+  08-March-2025 17:57:10----cat without a file reports an error:OK
+Result:PASS
+cat correctly reads sample files:
+  08-March-2025 17:57:11----Cat on a file that contains multiple words:OK
+  08-March-2025 17:57:12----Cat on a file that contains multiple lines:OK
+Result:PASS
+correct wc argument setup:
+  08-March-2025 17:57:13----wc on an empty file:OK
+  08-March-2025 17:57:14----wc without a filename reports an error:OK
+Result:PASS
+wc reports correct counts on sample files:
+  08-March-2025 17:57:15----wc on a file that contains mutliple lines:OK
+  08-March-2025 17:57:16----wc on a file that contains mutliple words in a line:OK
+  08-March-2025 17:57:17----wc on a file that contains blank lines:OK
+Result:PASS
+Sample ls runs:
+  08-March-2025 17:57:18----Create a single sub-directory with a single file:OK
+  08-March-2025 17:57:19----Create a single sub-directory with multiple files:OK
+  08-March-2025 17:57:25----ls a directory:OK
+Result:PASS
+Sample cd runs:
+  08-March-2025 17:57:31----cd into a directory and display the files:OK
+  08-March-2025 17:57:37----cd into a nested directory and display the files:OK
+Result:PASS
+ls error handling:
+  08-March-2025 17:57:43----ls on an invalid path reports an error:OK
+Result:PASS
+ls handles edge cases correctly:
+  08-March-2025 17:57:44----ls a single file through a variable identifier:OK
+  08-March-2025 17:57:45----Create a single sub-directory, and ls into that directory:OK
+Result:PASS
+ls filters files correctly:
+  08-March-2025 17:57:46----ls correctly filters files:OK
+  08-March-2025 17:57:47----ls correctly filters files v2:OK
+Result:PASS
+Recursive ls displays files correctly:
+  08-March-2025 17:57:48----Recursive ls with depth 1 does not capture inner files:NOT OK
+OK
+  08-March-2025 17:57:54----Recursive ls with depth 2 captures inner files:NOT OK (TIMEOUT)
+  08-March-2025 17:58:00----Recursive ls supports --d argument before --rec:NOT OK
+OK
+Result:FAIL
+Advanced Tests:
+  08-March-2025 17:58:06----Recursive ls correctly searches files in sub-directories:OK
+Result:PASS
+Hidden - Advanced wc tests:
+  08-March-2025 17:58:12----wc on an arbitrary file:OK
+  08-March-2025 17:58:13----wc on an a file with many 0s:OK
+Result:PASS
+Hidden - Advanced ls tests:
+  08-March-2025 17:58:19----Recursive ls correctly gathers files from an arbitrary deep tree:NOT OK (TIMEOUT)
+  08-March-2025 17:58:29----Recursive ls captures multiple sub-directories:NOT OK (TIMEOUT)
+  08-March-2025 17:58:35----ls with bad arguments:OK
+  08-March-2025 17:58:36----ls with an absolute path:OK
+  08-March-2025 17:58:42----cd with an absolute path:OK
+Result:FAIL
+Hidden - Advanced ls path tests:
+  08-March-2025 17:58:48----ls a grandparent directory and display the files:NOT OK
+  08-March-2025 17:58:54----ls a great grandparent directory and display the files:NOT OK
+  08-March-2025 17:59:00----ls a complex path and display the files:OK
+Result:FAIL
+Hidden - Incorrect number of arguments:
+  08-March-2025 17:59:06----Multiple paths in a single ls command:NOT OK (TIMEOUT)
+  08-March-2025 17:59:12----Multiple paths in a single cd command:NOT OK (TIMEOUT)
+  08-March-2025 17:59:18----Multiple paths in a single cat command:NOT OK (TIMEOUT)
+  08-March-2025 17:59:24----Multiple paths in a single wc command:NOT OK (TIMEOUT)
+Result:FAIL
+08-March-2025 17:59:30--- Test Suites Passed 31.0/35
+08-March-2025 17:59:30 FINISHED
